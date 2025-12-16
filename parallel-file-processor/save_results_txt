@@ -1,0 +1,6 @@
+if !analysis.errors.is_empty() {
+    writeln!(writer, " Errors:")?;
+    for e in &analysis.errors {
+        writeln!(writer, "  {:?}", e)?;
+    }
+}
